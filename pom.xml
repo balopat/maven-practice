@@ -42,9 +42,13 @@
     </repository>
     <snapshotRepository>
       <uniqueVersion>true</uniqueVersion>
-      <id>local-repo-snaps</id>
+      <id>local-repo</id>
       <name>Local Snapshots</name>
       <url>http://localhost:8080/archiva/repository/snapshots</url>
     </snapshotRepository>
   </distributionManagement> 
+  <modules>
+  	<module>module1</module>
+  	<module>module2</module>
+  </modules>
 </project>
