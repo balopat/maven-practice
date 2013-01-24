@@ -3,14 +3,14 @@
 
   <groupId>com.balopat</groupId>
   <artifactId>testing-multimodule-assembly-release-mvn</artifactId>
-  <version>1.1-SNAPSHOT</version>
+  <version>1.1</version>
   <packaging>pom</packaging>
 
   <name>testing-multimodule-assembly-release-mvn</name>
 
   <scm>
 	<developerConnection>scm:git:git@github.com:balopat/maven-practice.git</developerConnection>
-    <tag>testing-multimodule-assembly-release-mvn-1.0</tag>
+    <tag>testing-multimodule-assembly-release-mvn-1.1</tag>
   </scm>
   
   <properties>
