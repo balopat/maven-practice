@@ -3,14 +3,14 @@
 	<parent>
 		<groupId>com.balopat</groupId>
 		<artifactId>the-stuff</artifactId>
-		<version>1.4</version>
+		<version>1.5-SNAPSHOT</version>
 	</parent>
 	<artifactId>module2</artifactId>
 	<dependencies>
 		<dependency>
 			<groupId>com.balopat</groupId>
 			<artifactId>module1</artifactId>
-			<version>1.4</version>
+			<version>1.5-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>org.xmlmatchers</groupId>
