@@ -3,7 +3,7 @@
 	<parent>
 		<groupId>com.balopat</groupId>
 		<artifactId>testing-multimodule-assembly-release-mvn</artifactId>
-		<version>1.3</version>
+		<version>1.4-SNAPSHOT</version>
 	</parent>
 	<artifactId>module1</artifactId>
 	<dependencies>
