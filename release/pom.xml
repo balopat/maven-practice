@@ -1,0 +1,37 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.balopat</groupId>
+		<artifactId>the-stuff</artifactId>
+		<version>1.5-SNAPSHOT</version>
+	</parent>
+	<artifactId>release</artifactId>
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-assembly-plugin</artifactId>
+				<version>2.4</version>
+				<configuration>
+					<descriptors>
+						<descriptor>assembly/assembly.xml</descriptor>
+					</descriptors>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+	<distributionManagement>
+		<repository>
+			<uniqueVersion>false</uniqueVersion>
+			<id>local-repo</id>
+			<name>Local Repository</name>
+			<url>http://localhost:8080/archiva/repository/internal</url>
+		</repository>
+		<snapshotRepository>
+			<uniqueVersion>true</uniqueVersion>
+			<id>local-repo</id>
+			<name>Local Snapshots</name>
+			<url>http://localhost:8080/archiva/repository/snapshots</url>
+		</snapshotRepository>
+	</distributionManagement>
+</project>
