@@ -15,4 +15,4 @@ The work was, after lots of googling, and headbanging was finally based on [The 
 
 You can just simply run, and it will work (please update your repository url-s/user scm-s :))
 
-`` mvn release:clean release:prepare release:perform -B
+    mvn release:clean release:prepare release:perform -B
