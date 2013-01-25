@@ -6,4 +6,11 @@
     <version>1.2-SNAPSHOT</version>
   </parent>
   <artifactId>module2</artifactId>
+  <dependencies>
+  	<dependency>
+  		<groupId>com.balopat</groupId>
+  		<artifactId>module1</artifactId>
+  		<version>1.2-SNAPSHOT</version>
+  	</dependency>
+  </dependencies>
 </project>
