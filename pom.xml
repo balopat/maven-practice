@@ -1,12 +1,13 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.balopat</groupId>
-	<artifactId>testing-multimodule-assembly-release-mvn</artifactId>
+	<artifactId>the-stuff</artifactId>
 	<version>1.4-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
-	<name>testing-multimodule-assembly-release-mvn</name>
+	<name>the-stuff</name>
 
 	<scm>
 		<developerConnection>scm:git:git@github.com:balopat/maven-practice.git</developerConnection>
@@ -22,7 +23,6 @@
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
 			<version>3.8.1</version>
-			<scope>test</scope>
 		</dependency>
 	</dependencies>
 	<build>
@@ -30,6 +30,25 @@
 			<plugin>
 				<artifactId>maven-release-plugin</artifactId>
 				<version>2.4</version>
+			</plugin>
+			<plugin>
+				<artifactId>maven-assembly-plugin</artifactId>
+				<version>2.4</version>
+				<configuration>
+					<descriptors>
+						<descriptor>assembly/assembly.xml</descriptor>
+					</descriptors>
+				</configuration>
+				<executions>
+					<execution>
+						<phase>package</phase>
+						<goals>
+							<goal>single</goal>
+						</goals>
+						<configuration>
+						</configuration>
+					</execution>
+				</executions>
 			</plugin>
 		</plugins>
 	</build>

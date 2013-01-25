@@ -2,7 +2,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>com.balopat</groupId>
-		<artifactId>testing-multimodule-assembly-release-mvn</artifactId>
+		<artifactId>the-stuff</artifactId>
 		<version>1.4-SNAPSHOT</version>
 	</parent>
 	<artifactId>module1</artifactId>
