@@ -3,14 +3,14 @@
 
 	<groupId>com.balopat</groupId>
 	<artifactId>the-stuff-parent</artifactId>
-	<version>1.6-SNAPSHOT</version>
+	<version>1.6</version>
 	<packaging>pom</packaging>
 
 	<name>the-stuff-parent</name>
 
 	<scm>
 		<developerConnection>scm:git:git@github.com:balopat/maven-practice.git</developerConnection>
-		<tag>the-stuff-1.4</tag>
+		<tag>the-stuff-parent-1.6</tag>
 	</scm>
 
 	<properties>

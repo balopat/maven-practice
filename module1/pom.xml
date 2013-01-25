@@ -3,7 +3,7 @@
 	<parent>
 		<groupId>com.balopat</groupId>
 		<artifactId>the-stuff-parent</artifactId>
-		<version>1.6-SNAPSHOT</version>
+		<version>1.6</version>
 	</parent>
 	<artifactId>module1</artifactId>
 	<dependencies>
