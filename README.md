@@ -13,6 +13,14 @@ It does contain though a final, currently recommended solution by the Apache Mav
 
 The work was, after lots of googling, and headbanging was finally based on [The Maven team's recommended solution for these cases](http://maven.apache.org/plugins/maven-assembly-plugin/examples/multimodule/module-binary-inclusion-simple.html)
 
-You can just simply run, and it will work (please update your repository url-s/user scm-s :))
+To test the content of the file, it does the assembly with the regular command: 
+
+    mvn clean package
+
+And you'll find the zip under _release/target_ directory
+
+It will deploy the zip to the repository (please update your repository url-s/user scm-s :)) with also the standard commands:
 
     mvn release:clean release:prepare release:perform -B
+
+easy-beasy.
