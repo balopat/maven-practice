@@ -1,7 +1,7 @@
 multi modular maven assembly plugin and release plugin example
 ==============
 
-Just sandbox for playing around with maven multi-module project assembly and release.
+This started as a sandbox for playing around with maven multi-module project assembly and release.
 It does contain though a final, currently recommended solution by the Apache Maven guys for projects which require the following:
 
 * multimodular
@@ -11,7 +11,7 @@ It does contain though a final, currently recommended solution by the Apache Mav
   * module jars (deployables) in separate folder
   * script,... folders copied
 
-The work was, after lots of googling, and headbanging was finally based on [The Maven team's recommended solution for these cases](http://maven.apache.org/plugins/maven-assembly-plugin/examples/multimodule/module-binary-inclusion-simple.html)
+The work, after lots of googling and headbanging, was finally based on [The Maven team's recommended solution for these cases](http://maven.apache.org/plugins/maven-assembly-plugin/examples/multimodule/module-binary-inclusion-simple.html)
 
 To test the content of the file, it does the assembly with the regular command: 
 
