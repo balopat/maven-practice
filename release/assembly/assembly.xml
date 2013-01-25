@@ -2,19 +2,20 @@
 	xmlns="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.2"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.2 http://maven.apache.org/xsd/assembly-1.1.2.xsd">
-	<id>the-stuff</id>
+	<id>the-stuff</id>	
 	<formats>
 		<format>zip</format>
 	</formats>
 	<moduleSets>
 		<moduleSet>
+			<useAllReactorProjects>true</useAllReactorProjects>			
 			<binaries>
-				<outputDirectory>deployables</outputDirectory>
+				<outputDirectory>/deployables</outputDirectory>
 				<unpack>false</unpack>
 				<outputFileNameMapping>${module.artifactId}.${module.extension}</outputFileNameMapping>
 				<dependencySets>
 					<dependencySet>
-						<outputDirectory>lib</outputDirectory>
+						<outputDirectory>/lib</outputDirectory>
 						<excludes>
 							<exclude>com.balopat:module1</exclude>
 						</excludes>
